@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+        --Darkcyan: hsl(185, 75%, 39%);
+        --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+        --Darkgrayishblue: hsl(227, 10%, 46%);
+        --Darkgray: hsl(0, 0%, 59%);
+}
+*{
+    border: 0px;margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+
+body{
+    position: relative;
+    height:100vh;
+    background: var(--Darkcyan);
+    display: grid;
+    place-items: center;
+    font-weight: 400;
+    color: var(--Darkgrayishblue);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.svgimage{
+    width: 50rem;
+    height: 40rem;
+}
+#svg1{
+    position: absolute;
+    top:-350px;
+    left: -300px;
+}
+
+#svg2{
+    position: absolute;
+    right:-300px;
+    bottom:-370px;
+}
+
+
+
+.card{
+    background: url("images/bg-pattern-card.svg");
+    display: grid;
+    place-items: center;
+    border-radius: 20px;    
+    width: 20rem;
+    box-shadow: 4px 4px 30px var();
+    padding-top:30px;
+    z-index:2;
+}
+
+.card-img{
+    position: relative;
+    top: 40%;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+}
+.card-img img{
+    height: auto;
+    width:100%;
+    border-radius: 50%;
+}
+
+.card-body{
+    width: 100%;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    display: grid;
+    place-items: center;
+    font-family:'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.head{
+    margin:50px 0px;
+}
+.text-highlight{
+    color: var(--Verydarkdesaturatedblue);
+    font-weight: 700;
+    font-family:'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px solid var(--Darkgray);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:375px) {
+
+    .card{
+        width: 17rem;
+    }
+    .svgimage{
+        width: 30rem;
+        height: 25rem;
+    }
+    #svg1{
+        top: -135px;
+        left: -250px;
+    }
+    #svg2{
+        right: -300px;
+        bottom: -250px
+    }
+}
